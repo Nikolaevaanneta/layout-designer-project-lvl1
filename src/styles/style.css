@@ -1,1 +1,91 @@
-/** CSS STYLE **/
+@font-face {
+    font-weight: 400;
+    font-family: 'Open Sans';
+    src: url('font/OpenSans-Regular.ttf')
+}
+
+@font-face {
+    font-style: italic;
+    font-weight: normal;
+    font-family: 'Neucha';
+    src: url('font/Neucha-Regular.ttf');
+}
+
+h1 {
+    font: 72px/1.2em;
+    font-family: 'Neucha';
+}
+
+.orange {
+    color: #fe8a02;
+}
+
+.black {
+    color: #2A2626;
+}
+
+h2 {
+    font: 60px/1.2em 'Neucha';
+}
+
+h3 {
+    font: 34px/1.2em 'Neucha';
+}
+
+p {
+    font: 16px/1.6em 'Open Sans';
+    color: #2a2626;
+}
+
+header {
+    width: 1110px;
+    position: absolute;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: #f5f4f0;
+}
+
+div {
+    position: relative;
+    width: 540px;
+    bottom: 530px;
+}
+
+.column-2 {
+    right: -570px;
+    top: -650px;
+}
+
+main {
+    width: 1110px;
+    position: absolute;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: #f5f4f0;
+}
+
+footer {
+    width: 1110px;
+    position: absolute;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: #f5f4f0;
+}
+
+.background-img :before {
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0, 9;
+}
+
+.main-img {
+    position: absolute;
+    height: 525px;
+    top: 55px;
+    right: -270px;
+}
+
+button {
+    padding: 12px 24px;
+    font-weight: bold;
+}
