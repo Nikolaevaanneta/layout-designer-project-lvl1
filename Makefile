@@ -7,3 +7,9 @@ lint:
 
 deploy:
 	npx surge ./src/
+
+server.start:
+	sudo docker-compose up
+
+server.stop:
+	sudo docker-compose down

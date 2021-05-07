@@ -1,19 +1,54 @@
 @font-face {
     font-weight: 400;
-    font-family: 'Open Sans';
-    src: url('font/OpenSans-Regular.ttf')
+    font-family: "Open Sans";
+    src: url('/font/OpenSans-Regular.ttf') format("opentype");
 }
 
 @font-face {
     font-style: italic;
-    font-weight: normal;
-    font-family: 'Neucha';
-    src: url('font/Neucha-Regular.ttf');
+    font-weight: 400;
+    font-family: "Neucha";
+    src: url('/font/Neucha-Regular.ttf') format("opentype");
+}
+
+header {
+    width: 1441px;
+    position: absolute;
+    background: #f5f4f0;
+}
+
+section {
+    width: 1110px;
+    top: 100px;
+    bottom: 100px;
+    right: 165px;
+    left: 165px;
+    display: flex;
+    align-items: flex-end;
+}
+
+div {
+    position: absolute;
+    width: 540px;
+    top: 530px;
+    right: 55px;
+}
+
+.column-1 {
+    left: 165px;
+}
+
+.column-2 {
+    right: 165px;
 }
 
 h1 {
-    font: 72px/1.2em;
-    font-family: 'Neucha';
+    font: 72px "Neucha";
+    font-style: italic;
+    line-height: 1.2em;
+    position: absolute;
+    left: 165px;
+    top: 100px;
 }
 
 .orange {
@@ -25,39 +60,23 @@ h1 {
 }
 
 h2 {
-    font: 60px/1.2em 'Neucha';
+    font: 60px "Neucha";
+    line-height: 1.2em;
 }
 
 h3 {
-    font: 34px/1.2em 'Neucha';
+    font: 34px 'Neucha';
+    line-height: 1.2em;
 }
 
 p {
-    font: 16px/1.6em 'Open Sans';
+    font: 16px "Open Sans";
+    line-height: 1.6em;
     color: #2a2626;
 }
 
-header {
-    width: 1110px;
-    position: absolute;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    background: #f5f4f0;
-}
-
-div {
-    position: relative;
-    width: 540px;
-    bottom: 530px;
-}
-
-.column-2 {
-    right: -570px;
-    top: -650px;
-}
-
 main {
-    width: 1110px;
+    width: 1441px;
     position: absolute;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -65,27 +84,48 @@ main {
 }
 
 footer {
-    width: 1110px;
+    width: 1440px;
+    height: 100px;
     position: absolute;
+    top: 814px;
     margin-top: 100px;
     margin-bottom: 100px;
-    background: #f5f4f0;
+    background: #42413c;
 }
 
-.background-img :before {
+.background-img ::before {
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0, 9;
+}
+
+.background-img {
+    opacity: 0.1;
 }
 
 .main-img {
     position: absolute;
+    width: 1082.81px;
     height: 525px;
+    left: 461px;
     top: 55px;
-    right: -270px;
 }
 
 button {
     padding: 12px 24px;
+    background: #fe8a02;
+    border: none;
+}
+
+a {
+    font-family: "OpenSans-Regular";
+    font-size: 16px;
+    color: white;
+    border: none;
     font-weight: bold;
+}
+
+.video {
+    position: absolute;
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+    background: url(/image.png);
 }
